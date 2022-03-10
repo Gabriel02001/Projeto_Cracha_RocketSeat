@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+}
+
+html, body{
+ height: 100%;
+ font-family: 'Roboto', sans-serif;
+ -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: url(https://www.rocketseat.com.br/_next/image?url=%2Fimages%2Fhome%2Fhero.png&w=3840&q=100);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ --grey: hsl(240, 100%, 98%);
+ display: grid;
+ place-items: center;
+}
+
+main{
+ background: url(images/background.svg);
+ width: 375px;
+ height: 96%;
+}
+
+.container{
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 250px;
+ color: var(--grey);
+ margin-top: 185px;
+ text-align: center;
+}
+
+.avatar{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.avatar span{
+  position: absolute;
+  left: 40px;;
+  top: -15px;
+
+  z-index: 1;
+}
+
+.avatar > img{
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  margin-top: 11px;
+}
+
+h1{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+}
+ 
+a{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  text-decoration: none;
+  color: var(--grey);
+}
+p{
+  margin-top: 30px; 
+}
+
+ul{
+  margin-top: 5.5rem;
+  display: flex;
+  list-style: none;
+  gap: 17px;
+  padding-left: 0px;
+  justify-content: center;
+}
+
+#voltar{
+  position: absolute; 
+  place-self: start; 
+  margin: 20px 20px ;  
+  margin-top: 40px;
+  height: 40px;
+  width: 100px;
+  background: none;
+  color: rgb(252, 51, 252);
+  border: 2px solid rgba(199, 38, 199, 0.897);
+  box-shadow: 4px 4px rgb(211, 63, 224);
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+#voltar:hover{
+  background-color: rgba(199, 38, 199, 0.664);
+  color: white;
+}
+#voltar:active{
+  box-shadow: 2px 2px rgb(211, 63, 224);
+  transform: translate(2px, 2px)
+}
+

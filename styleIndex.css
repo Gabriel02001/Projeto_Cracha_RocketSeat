@@ -1,0 +1,95 @@
+*{
+  margin: 0px;
+}
+ body{ 
+   display: grid;
+   font-family: 'Press Start 2P', cursive;
+   overflow: hidden;
+}
+
+.space{
+
+  background: url(https://images6.alphacoders.com/995/995178.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+  opacity: 1;
+  z-index:0;
+  animation: Space 15s infinite;
+  
+}
+
+.astro{
+  height: 100px;
+  width: 100px;
+  z-index: 4;
+}
+
+main{
+ 
+  justify-self: center;
+  align-self: center;
+  margin-top: 100px;
+  display: grid;
+  place-items: center;
+  height: 300px;
+  width: 240px;
+  background-color: rgba(230, 230, 250, 0);
+  z-index: 1;
+  color: white;
+
+  font-size: 13px;
+
+  
+}
+
+
+input{
+    width: 220px;
+    height: 45px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(62, 134, 218);
+    padding-left: 9px;
+}
+
+ #enviar{
+  margin-top: 40px;
+  height: 40px;
+  width: 100px;
+  background: none;
+  color: rgb(252, 51, 252);
+  border: 2px solid rgba(199, 38, 199, 0.897);
+  box-shadow: 4px 4px rgb(211, 63, 224);
+  font-family: 'Press Start 2P', cursive;
+}
+
+#enviar:hover{
+  background-color: rgba(199, 38, 199, 0.664);
+  color: white;
+}
+#enviar:active{
+  box-shadow: 2px 2px rgb(211, 63, 224);
+  transform: translate(2px, 2px)
+}
+
+
+@keyframes Space{
+  0%{
+    transform: scale(1.0)
+  }
+  50%{
+    transform: scale(1.2)
+  }
+  100%{
+    transform: scale(1.0)
+  }
+
+}
+ 
